@@ -15,58 +15,36 @@
 
             <div id="nav">
                 <div class="nav-elem">
-                    <h4>Score</h4>
-                    <div class="box"></div>
+                    <h4>Click :</h4>
+                    <div class="box">1</div>
                 </div>
                 <div class="nav-elem">
-                    <h4>Score</h4>
-                    <div class="box"></div>
+                    <h4>Timer :</h4>
+                    <div class="box">60</div>
                 </div>
                 <div class="nav-elem">
-                    <h4>Score</h4>
-                    <div class="box"></div>
+                    <h4>Score :</h4>
+                    <div class="box">0</div>
                 </div>
             </div>
-            
-            <!-- <div class="number">
-                <button id="1" onclick="getValue()">1</button>
-                <button id="2" onclick="getValue()">2</button>
-                <button id="3" onclick="getValue()">3</button>
-                <button id="4" onclick="getValue()">4</button>
-                <button id="5" onclick="getValue()">5</button>
-                <button id="6" onclick="getValue()">6</button>
-                <button id="7" onclick="getValue()">7</button>
-                <button id="8" onclick="getValue()">8</button>
-                <button id="9" onclick="getValue()">9</button>
-                <button id="0" onclick="getValue()">0</button>
+
+            <div id="page">
+
             </div>
-            
-            <button id="start" onclick="target()">Start</button> -->
+
+            <!-- <button id="start" onclick="target()">Start</button> -->
         </div>
     </div>
 
 
     <script>
-        var scor = 0;
-
-        var temp = 0;
-
-        function score(){
-        }
-        
-        function target() {
-            let num = Math.floor(Math.random() * 10);
-            temp = num;
-            document.getElementById("Click").innerText = num;
-            document.getElementById("Score").innerText = scor;
+        var balls = "";
+        for (var j = 1; j <= 152; j++) {
+            var num = Math.floor(Math.random() * 10);
+            balls += `<div class="bubble">${num}</div>`;
         }
 
-        var value = document.getElementById("Click").innerHTML;
-        console.log(temp);
-
-        // function getValue() {
-        //     get
-        // }
+        document.querySelector("#page").innerHTML = balls;
 
     </script>
     <script src="script.js"></script>
