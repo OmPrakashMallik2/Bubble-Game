@@ -46,7 +46,7 @@ document.querySelector("#page").addEventListener("click", function (dats) {
     if (clickedNumber == newTarget) {
         addScore();
         getNewTarget();
-        time = 10;
+        time = 11;
         makeBubble();
     }
 });
