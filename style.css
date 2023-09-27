@@ -81,28 +81,10 @@ body {
     cursor: pointer;
 }
 
-
-
-/* button {
-    padding: 10px 16px;
-    margin: 5px;
-    font-weight: bold;
-    font-size: large;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    cursor: pointer;
+#gameover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
-button:hover {
-    background-color: rgb(180, 180, 180);
-    text-decoration: underline;
-}
-
-#start {
-    border-radius: 50px;
-    padding: 12px 40px;
-    background-color: blue;
-    color: white;
-    margin-top: 20px;
-} */
