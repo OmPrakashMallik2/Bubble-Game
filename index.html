@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubble Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Bubble Game</h1>
+    <div id="main">
+        <div id="panel">
+
+            <div id="nav">
+                <div class="nav-elem">
+                    <h4>Score</h4>
+                    <div class="box"></div>
+                </div>
+                <div class="nav-elem">
+                    <h4>Score</h4>
+                    <div class="box"></div>
+                </div>
+                <div class="nav-elem">
+                    <h4>Score</h4>
+                    <div class="box"></div>
+                </div>
+            </div>
+            
+            <!-- <div class="number">
+                <button id="1" onclick="getValue()">1</button>
+                <button id="2" onclick="getValue()">2</button>
+                <button id="3" onclick="getValue()">3</button>
+                <button id="4" onclick="getValue()">4</button>
+                <button id="5" onclick="getValue()">5</button>
+                <button id="6" onclick="getValue()">6</button>
+                <button id="7" onclick="getValue()">7</button>
+                <button id="8" onclick="getValue()">8</button>
+                <button id="9" onclick="getValue()">9</button>
+                <button id="0" onclick="getValue()">0</button>
+            </div>
+            
+            <button id="start" onclick="target()">Start</button> -->
+        </div>
+    </div>
+
 
     <script>
-        console.log("hello");
+        var scor = 0;
+
+        var temp = 0;
+
+        function score(){
+        }
+        
+        function target() {
+            let num = Math.floor(Math.random() * 10);
+            temp = num;
+            document.getElementById("Click").innerText = num;
+            document.getElementById("Score").innerText = scor;
+        }
+
+        var value = document.getElementById("Click").innerHTML;
+        console.log(temp);
+
+        // function getValue() {
+        //     get
+        // }
+
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>
