@@ -1,6 +1,6 @@
 # Bubble-Game
 
-## Link :- https://omprakashmallik.github.io/Bubble-Game/
+## Link :- https://bubble-game-phi.vercel.app/
 
 ## todo :
 - start button
